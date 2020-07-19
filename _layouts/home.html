@@ -12,6 +12,9 @@ layout: archive
   {% assign posts = site.posts %}
 {% endif %}
 
+<script type="text/javascript" src="{{ '/assets/js/matter/matter.js' | relative_url }}"></script>
+<script type="text/javascript" src="{{ '/assets/js/matter/bridge.js' | relative_url }}"></script>
+
 {% for post in posts %}
   {% include archive-single.html %}
 {% endfor %}
